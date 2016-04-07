@@ -9,7 +9,34 @@
 </head>
 <body>
   <div id="wrapper">
-    <h2 class="starter-box">^⨀ᴥ⨀^<br>Make Something Awesome</h2>
+    <div class="panel panel-default todo-box">
+      <div class="panel-heading">
+        <form action="#" class="add-task-form">
+          <div class="input-group">
+            <input type="text" class="form-control task-name-input" aria-label="...">
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-default add-task">Add Task</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="panel-body">
+        <div class="btn-group btn-group-justified filters">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" data-filter="all">All</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" data-filter="completed">Completed</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" data-filter="uncompleted">Uncompleted</button>
+          </div>
+        </div>
+        <div class="tasks-list">
+          
+        </div>
+      </div>
+    </div>
   </div>
   <script src="build/vendor.js"></script>
   <script src="build/app.js"></script>

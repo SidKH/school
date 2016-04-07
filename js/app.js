@@ -1,19 +1,11 @@
 import HP from './helpers';
+import {ToDo} from './todo';
 
 (function ($) {
 
   // When DOM is ready
   $(function () {
-    example(HP.random(10, 20));
+    window.todo = ToDo('.todo-box');
   });
-
-  /**
-   * Just an example function
-   *   DELETE IT
-   * @param  {Number} n - random number between 10 and 20
-   */
-  function example(n) {
-    console.log(`Hello in ES6... I am ${n} - random number between 10 and 20`);
-  }
 
 }(jQuery));

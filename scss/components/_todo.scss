@@ -1,0 +1,34 @@
+.todo-box {
+  width: 500px;
+  margin: 50px auto 0;
+  .panel-heading {
+    .btn {
+      line-height: 20px;
+    }
+  }
+  .task {
+    margin-bottom: 10px;
+    &.completed input.form-control {
+      text-decoration: line-through;
+      background: #eee;
+    }
+    &.hide {
+      display: none;
+    }
+    .form-control {
+      &[readonly] {
+        background: #fcf8e3;
+      }
+    }
+    .delete-task {
+      color: #d9534f;
+      cursor: pointer;
+    }
+  }
+  .filters {
+    margin-bottom: 20px;
+    .btn:focus {
+      outline: none;
+    }
+  }
+}
